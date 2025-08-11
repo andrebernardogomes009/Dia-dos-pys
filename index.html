@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Dia dos Pais</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: linear-gradient(to right, #051937, #171228, #190a1a, #12040d, #000000);
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 50px 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      margin: 20px auto;
+      max-width: 600px;
+      padding: 20px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 15px;
+    }
+    .message {
+      font-size: 1.2rem;
+      margin-top: 15px;
+      line-height: 1.6;
+    }
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      font-size: 0.9rem;
+    }
+    button {
+      background: #ffce00;
+      color: #333;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #ffb400;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1> Feliz Dia dos Pais!</h1>
+  </header>
+
+  <div class="card">
+    
+    <div class="message">
+      Pai, hoje é o vosso dia, mas quem ganha o presente sou eu:  
+      poder aprender com o senhor, me inspirar na vossa força, paciência, sabedoria
+      e no vosso jeito único de viver. Obrigado por ser meu exemplo e meu herói!  
+      
+    </div>
+    <br>
+    <button onclick="mostrarSurpresa()">Clique para ver a surpresa 🎁</button>
+    <p id="surpresa" style="display:none; margin-top:20px; font-size:1.2rem;">
+      🎉 O senhor é o cara! Sempre foi e sempre será meu maior professor, tanto no código quanto na vida. Obrigado por todos os ensinamentos! 👨‍💻💪
+      <img src="./img1.jpg">
+    </p>
+    <img src="./img1.jpg">
+  </div>
+
+  <footer>
+    Feito com carinho por Dev Androlas 
+  </footer>
+
+  <script>
+    function mostrarSurpresa() {
+      document.getElementById('surpresa').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
